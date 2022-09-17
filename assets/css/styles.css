@@ -1,0 +1,130 @@
+:root {
+	--bg-color: #121214;
+	--bg-card-color: #262629;
+	--title-card-color: #ffffff;
+	--text-card-color: #C1C1C1;
+	--gradient-color: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+	--social-icon-color: #EEEEEE;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../images/bg.svg);
+	background-color: var(--bg-color);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100%;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+header div {
+	width: 120px;
+	height: 120px;
+	padding: 4px;
+	border-radius: 50%;
+	margin: 32px auto 0;
+
+	background-image: var(--gradient-color);
+
+	transition: transform 0.2s;
+}
+
+header div:hover {
+	transform: scale(1.1);
+}
+
+header div img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+main {
+	max-width: 520px;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin: 32px auto 63px;
+}
+
+section {
+	padding-top: 4px;
+	background-image: var(--gradient-color);
+	border-radius: 10px;
+}
+
+section div {
+	width: 100%;
+	background-color: var(--bg-card-color);
+	border-radius: 8px;
+	padding: 24px 32px 32px;
+}
+
+section div h2 {
+	color: var(--title-card-color);
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 160%;
+}
+
+section div p {
+	color: var(--text-card-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	letter-spacing: -0.18px;
+}
+
+section ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+
+	margin-top: 24px;
+}
+
+section ul li {
+	width: 100px;
+	height: 150px;
+}
+
+section ul li img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	border: 1px solid #555555;
+	transition: transform .3s;
+}
+
+section ul li img:hover {
+	transform: scale(1.1);
+}
+
+.social-list li {
+	width: 32px;
+	height: 32px;
+}
+
+.social-list a {
+	font-size: 32px;
+	color: var(--social-icon-color);
+}
+
+.social-list a i {
+	transition: transform 0.3s;
+}
+
+.social-list a i:hover {
+	transform: scale(1.1);
+}
